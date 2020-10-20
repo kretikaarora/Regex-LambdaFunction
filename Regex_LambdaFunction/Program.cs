@@ -1,13 +1,13 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Program.cs" company="Bridgelabz">
+// <copyright file="Program.cs" company="Capgemini">
 //   Copyright © 2018 Company
 // </copyright>
 // <creator Name="Kretika Arora"/>
 // --------------------------------------------------------------------------------------------------------------------
+using System;
+
 namespace UserRegistration
 {
-    using System;
-
     /// <summary>
     /// entry point for Regex program
     /// </summary>
@@ -19,6 +19,7 @@ namespace UserRegistration
         /// <param name="args">The arguments.</param>
         public static void Main(string[] args)
         {
+            ///options for user to enter details
             Console.WriteLine(" welcome to User Registration");
             Console.WriteLine("1. Press 1 for validation of  first name");
             Console.WriteLine("2. Press 2 for validation of last name");
@@ -26,7 +27,7 @@ namespace UserRegistration
             Console.WriteLine("4. Press 4 for validation of email address");
             Console.WriteLine("5. Press 5 for validation of password");
             Console.WriteLine("6. Press 6 to exit");
-
+            ///creating object of UserDetails class to access its functions
             UsersDetails usersDetails = new UsersDetails();
 
             bool flag = true;
